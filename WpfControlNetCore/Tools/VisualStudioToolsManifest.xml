@@ -1,8 +1,0 @@
-﻿<?xml version="1.0"?>
-<FileList>
-  <File Reference="WpfControlNetCore.dll">
-    <ToolboxItems BlendCategory="ChrisH NetCore controls" VSCategory="ChrisH NetCore controls">
-      <Item Type="WpfControlNetCore.MyButton"/>
-    </ToolboxItems>
-  </File>
-</FileList>

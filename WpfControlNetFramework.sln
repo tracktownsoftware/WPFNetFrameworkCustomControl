@@ -21,8 +21,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{ECB5E584-A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pack", "Pack", "{4A4AF241-B17A-4991-956B-8CB962D4830C}"
 	ProjectSection(SolutionItems) = preProject
-		Pack\packAll.bat = Pack\packAll.bat
+		Pack\pack.bat = Pack\pack.bat
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfNetFrameworkAppTest", "WpfNetFrameworkAppTest\WpfNetFrameworkAppTest.csproj", "{089DB125-6BF3-46F8-B3A8-B9B7CAF942A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +40,10 @@ Global
 		{D8CE401F-DAF7-46C6-9ED6-6E1ED7746E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8CE401F-DAF7-46C6-9ED6-6E1ED7746E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8CE401F-DAF7-46C6-9ED6-6E1ED7746E15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{089DB125-6BF3-46F8-B3A8-B9B7CAF942A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{089DB125-6BF3-46F8-B3A8-B9B7CAF942A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{089DB125-6BF3-46F8-B3A8-B9B7CAF942A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{089DB125-6BF3-46F8-B3A8-B9B7CAF942A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +51,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4A5D57A0-0CFD-4F16-AE99-3713F4E027A6} = {0ADD4335-A29A-4D31-8EBF-8D4DDC8C609D}
 		{D8CE401F-DAF7-46C6-9ED6-6E1ED7746E15} = {0ADD4335-A29A-4D31-8EBF-8D4DDC8C609D}
+		{089DB125-6BF3-46F8-B3A8-B9B7CAF942A9} = {0ADD4335-A29A-4D31-8EBF-8D4DDC8C609D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {218098CA-01C6-4853-9012-C6D47BB23F26}

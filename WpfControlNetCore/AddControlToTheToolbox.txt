@@ -1,3 +1,0 @@
-﻿To install this control into the Visual Studio toolbox, open your toolbox, and then right click on any section of the toolbox 
-and select CHOOSE ITEMS. A window will appear. Click the "Browse" button in the window, and find the DLL file you downloaded. Select it and click 
-Open. You should now be able to drag the Toggle Switch into the form and program it.
