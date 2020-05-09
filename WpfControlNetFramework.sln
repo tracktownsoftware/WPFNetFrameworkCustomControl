@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29521.150
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControlNetFramework", "WpfControlNetFramework\WpfControlNetFramework.csproj", "{4A5D57A0-0CFD-4F16-AE99-3713F4E027A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{CF92FFB1-8644-46C5-86AD-237E37BB8DFB}"
+	ProjectSection(SolutionItems) = preProject
+		Notes_BuildPackages.txt = Notes_BuildPackages.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF_NetFramework", "WPF_NetFramework", "{0ADD4335-A29A-4D31-8EBF-8D4DDC8C609D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControlNetFramework.Design", "WpfControlNetFramework.Design\WpfControlNetFramework.Design.csproj", "{D8CE401F-DAF7-46C6-9ED6-6E1ED7746E15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{ECB5E584-A101-40EB-B55A-9FFACBF2AD01}"
+	ProjectSection(SolutionItems) = preProject
+		Libs\nuget.exe = Libs\nuget.exe
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pack", "Pack", "{4A4AF241-B17A-4991-956B-8CB962D4830C}"
+	ProjectSection(SolutionItems) = preProject
+		Pack\packAll.bat = Pack\packAll.bat
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A5D57A0-0CFD-4F16-AE99-3713F4E027A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A5D57A0-0CFD-4F16-AE99-3713F4E027A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A5D57A0-0CFD-4F16-AE99-3713F4E027A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A5D57A0-0CFD-4F16-AE99-3713F4E027A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8CE401F-DAF7-46C6-9ED6-6E1ED7746E15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8CE401F-DAF7-46C6-9ED6-6E1ED7746E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8CE401F-DAF7-46C6-9ED6-6E1ED7746E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8CE401F-DAF7-46C6-9ED6-6E1ED7746E15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4A5D57A0-0CFD-4F16-AE99-3713F4E027A6} = {0ADD4335-A29A-4D31-8EBF-8D4DDC8C609D}
+		{D8CE401F-DAF7-46C6-9ED6-6E1ED7746E15} = {0ADD4335-A29A-4D31-8EBF-8D4DDC8C609D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {218098CA-01C6-4853-9012-C6D47BB23F26}
+	EndGlobalSection
+EndGlobal

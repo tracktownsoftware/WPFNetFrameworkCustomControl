@@ -1,14 +1,12 @@
-To create packages:
-1) Open developer command prompt window for VS2019
-2) In the developer command prompt window make \CustomControlTests\Pack the current directory
-3) At command prompt run packAll.bat
-4) Four nupkg files should be output to \CustomControlTests\Pack\
-5) Note: PACKAGEVERSION can be modified in packAll.bat
+To create package:
+1) Open developer command prompt window for VS2019preview
+2) In the developer command prompt window make \WPFNetCoreCustomControl\Pack the current directory
+3) PACKAGEVERSION can be modified in pack.bat
+4) At command prompt run pack.bat
+5) Nupkg files should be output to \WPFNetFrameworkCustomControl\Pack\Packages
 
-Notes on the \CustomControlTests\Pack\pack*.bat files:
-- For .Net Core SDK projects the csproj file contains package information and "dotnet pack" is used.
-- For .Net Framework projects a nuspec file is in the project folder and "nuget.exe pack" is used.
-
+Note: The WPFControlNetCore.csproj SDK file contains package information to include 
+WPFControlNetCore.designtools.dll and other files.
 
 Useful links:
 https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-pack
