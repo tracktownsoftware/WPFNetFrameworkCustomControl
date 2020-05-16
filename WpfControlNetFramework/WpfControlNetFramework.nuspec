@@ -19,7 +19,9 @@
   <files>
     <file src=".\Tools\VisualStudioToolsManifest.xml" target="tools" />
     <file src="..\NetFramework\bin\Release\WpfControlNetFramework.dll" target="lib\net472" />
+    <file src="..\NetFramework\bin\Release\WpfControlNetFramework.dll" target="lib\net472\design" />
     <file src="..\NetFramework\bin\Release\WpfControlNetFramework.Design.dll" target="lib\net472\design" />
+    <file src="..\NetFramework\bin\Release\WpfControlNetFramework.ConsoleApp.exe" target="lib\net472\design" />
     <file src="..\NetFramework\bin\Release\Microsoft.Windows.Design.Extensibility.dll" target="lib\net472\design" />
     <file src="..\NetFramework\bin\Release\Microsoft.Windows.Design.Interaction.dll" target="lib\net472\design" />
   </files>
