@@ -16,8 +16,6 @@ namespace WpfControlNetFramework.Design
         private MenuAction whiteBackgroundMenuAction;
         private MenuAction blueBackgroundMenuAction;
         private MenuAction menuAction_ShowDesignTimeUI_v1;
-        private MenuAction menuAction_ShowDesignTimeUI_v2;
-        private MenuAction menuAction_ShowDesignTimeUI_v3;
         private MenuAction menuAction_ShowDesignTimeUI_v4;
 
         public CustomContextMenuProvider()
@@ -39,14 +37,6 @@ namespace WpfControlNetFramework.Design
             menuAction_ShowDesignTimeUI_v1.Execute +=
                 new EventHandler<MenuActionEventArgs>(Show_ShowDesignTimeUI_v1_Execute);
 
-            menuAction_ShowDesignTimeUI_v2 = new MenuAction("Show UI from XAML DependencyProperty - New Process");
-            menuAction_ShowDesignTimeUI_v2.Execute +=
-                new EventHandler<MenuActionEventArgs>(Show_ShowDesignTimeUI_v2_Execute);
-
-            menuAction_ShowDesignTimeUI_v3 = new MenuAction("Show UI from XAML DependencyProperty - New Process v2");
-            menuAction_ShowDesignTimeUI_v3.Execute +=
-                new EventHandler<MenuActionEventArgs>(Show_ShowDesignTimeUI_v3_Execute);
-
             menuAction_ShowDesignTimeUI_v4 = new MenuAction("Show UI from XAML DependencyProperty - New Thread");
             menuAction_ShowDesignTimeUI_v4.Execute +=
                 new EventHandler<MenuActionEventArgs>(Show_ShowDesignTimeUI_v4_Execute);
@@ -56,8 +46,6 @@ namespace WpfControlNetFramework.Design
             MenuGroup myMenuGroup = new MenuGroup("MyMenuGroup", "Custom background");
             myMenuGroup.HasDropDown = false;
             myMenuGroup.Items.Add(menuAction_ShowDesignTimeUI_v1);
-            myMenuGroup.Items.Add(menuAction_ShowDesignTimeUI_v2);
-            myMenuGroup.Items.Add(menuAction_ShowDesignTimeUI_v3);
             myMenuGroup.Items.Add(menuAction_ShowDesignTimeUI_v4);
             myMenuGroup.Items.Add(redBackgroundMenuAction);
             myMenuGroup.Items.Add(whiteBackgroundMenuAction);
@@ -94,21 +82,7 @@ namespace WpfControlNetFramework.Design
                 }
             }
         }
-        private void Show_ShowDesignTimeUI_v2_Execute(object sender, MenuActionEventArgs e)
-        {
-            // FAILS - Show .Net Core UI at design-time by using a dependency property as a trigger.
-            var item = e.Selection.PrimarySelection;
-            item.Properties["DependencyPropertyTrigger"].SetValue("Test New Process");
-            item.Properties["DependencyPropertyTrigger"].ClearValue();
-            string moreinfo = item.Properties["MoreInfo"].ComputedValue as string;
-        }
 
-        private void Show_ShowDesignTimeUI_v3_Execute(object sender, MenuActionEventArgs e)
-        {
-            var item = e.Selection.PrimarySelection;
-            item.Properties["DependencyPropertyTrigger"].SetValue("Test New Process v2");
-            item.Properties["DependencyPropertyTrigger"].ClearValue();
-        }
         private void Show_ShowDesignTimeUI_v4_Execute(object sender, MenuActionEventArgs e)
         {
             var item = e.Selection.PrimarySelection;
